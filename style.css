@@ -28,3 +28,13 @@
     transform: scaleX(1);
     transform-origin: left;
 }
+.slide-btn
+{
+    transform-origin: left;
+}
+.slide-btn:hover
+{
+    background: black;
+    color: aliceblue;
+    transition: 0.5s ease;
+}
