@@ -11,7 +11,7 @@
 </head>
 <body class="[font-family:'Poppins',sans-serif;]">
     <header>
-        <div class="w-full hidden md:flex border border-2 h-[60px] flex justify-between items-center px-3 py-1">
+        <div class="w-full hidden md:flex border border-2 h-[60px]  justify-between items-center px-3 py-1">
             <p><i class="ri-discuss-line"></i> <span>Need Help: (+92) 311 243675</span></p>
             <p class="mr-5 font-semibold text-gray-600">Free Standard Shipping On US Orders Over $99</p>
             <div class="flex gap-2">
@@ -24,18 +24,95 @@
                 <img src="./img/logo.svg" class="w-[130px]">
             </div>
             <ul class="flex gap-20">
-                <li><a href="#" class="link">Home</a></li>
-                <li><a href="#" class="link">SHOP</a></li>
-                <li><a href="#" class="link">Product</a></li>
-                <li><a href="#" class="link">Blog</a></li>
-                <li><a href="#" class="link">Featured</a></li>
+                <li class="relative group">
+                    <a href="#" class="link">Home<i class="ri-arrow-down-s-line"></i></a>
+                    <ul class="absolute left-0 top-8 py-2 text-gray-600 bg-white w-60 shadow-[0_0_15px_rgba(0,0,0,0.2)]
+                    group-hover:text-black
+                    translate-y-3 group-hover:translate-y-0 duration-300
+                    invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all
+                    
+                    " style="z-index: 10;">
+                        <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Watch</li>
+                        <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Watch</li>
+                        <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Watch</li>
+                        <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Watch</li>
+                        <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Watch</li>
+                    </ul> 
+                </li>
+                <li class=" group">
+                    <a href="#" class="link">Shop <i class="ri-arrow-down-s-line"></i></a>
+                    <ul class="absolute left-0 top-[23%] py-2 text-gray-600 bg-white h-[500px] w-full shadow-[0_0_15px_rgba(0,0,0,0.2)]
+                    group-hover:text-black
+                    translate-y-3 group-hover:translate-y-0 duration-300
+                    invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all
+                    
+                    " style="z-index: 10;">
+                        <div class="grid grid-cols-5 items-center gap-2">
+                            <div>
+                                <img src="./img/shop-img-1.webp" class="m-2 h-[400px]">
+                            </div>
+                            <div>
+                                <img src="./img/shop-img-2.jpg" class="m-3 h-[400px]">
+                            </div>
+                            <div class="ml-8 flex flex-col gap-2">
+                                <h2 class="mt-3 text-[16px] font-semibold">LAYOUT</h2>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Standard</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Standard With Banner</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Category Image 1</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Category Image 2</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">FullWith</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">List View</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Simple</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Mansonry</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Overlay Header</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Collection List 1</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Collection List 2</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Collection Slider</p>
+                            </div>
+                            <div class="ml-8 flex flex-col gap-2">
+                                <h2 class="mt-3 text-[16px] font-semibold">LAYOUT</h2>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Standard</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Standard With Banner</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Category Image 1</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Category Image 2</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">FullWith</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">List View</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Simple</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Mansonry</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Overlay Header</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Collection List 1</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Collection List 2</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Collection Slider</p>
+                            </div>
+                            <div class="ml-8 flex flex-col gap-2">
+                                <h2 class="mt-3 text-[16px] font-semibold">LAYOUT</h2>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Standard</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Standard With Banner</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Category Image 1</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Category Image 2</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">FullWith</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">List View</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Simple</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Mansonry</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Overlay Header</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Collection List 1</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Collection List 2</p>
+                                <p class="text-[13px] text-gray-600 hover:text-black cursor-pointer">Collection Slider</p>
+                            </div>
+                        </div>
+                    </ul> 
+                </li>
+                <!-- <li><a href="#" class="link">SHOP</a></li> -->
+                <li><a href="#" class="link">Product <i class="ri-arrow-down-s-line"></i></a></li>
+                <li><a href="#" class="link">Blog <i class="ri-arrow-down-s-line"></i></a></li>
+                <li><a href="#" class="link">Featured <i class="ri-arrow-down-s-line"></i></a></li>
             </ul>
             <div class="flex gap-4 items-center">
                 <p><i class="ri-search-line text-[30px]"></i> <span class="text-[15px] text-gray-600 font-semibold">Search</span></p>
                 <i class="ri-shopping-bag-line text-[30px]"></i>
             </div>
         </div>
-        <div class="w-full h-[500px] overflow-hidden mt-2">
+    <div class="w-full h-[550px] overflow-hidden mt-2">
                <div id="slider" class="flex transition-transform duration-700">
 
             <div class="slide relative w-full flex-shrink-0">
@@ -58,16 +135,27 @@
                 <p class="absolute top-[50%] ml-[40px] text-white  text-xl max-w-[35%] mt-2">Explore Seasonal Collection, Iconic Accessories, And More</p>
                 <button class="slide-btn absolute bottom-[28%]  ml-[40px] px-[4%] font-semibold py-4 bg-[#FFFFFF] text-black">Shop Now</button>
             </div>
-
-        </div>
-        <div class="w-full h-[400px] mt-2">
-            <div class="flex overflow-hidden w-full">
-                <img src="./img/slider img 1.webp" class="w-full object-cover h-full">
-                <img src="./img/slide img 2.jpg" alt="">
-                <img src="./img/slide img 3.jpg" alt="">
-            </div>
         </div>
     </header>
+    <section class="w-full h-auto pb-3  mb-10  overflow-hidden">
+        <div class="w-full h-[100px]  flex items-center justify-center mb-10">
+        <h2 class="text-center pt-10 text-6xl [font-family:'Allison',cursive;]">Classic Watch Collection</h2>
+        </div>
+        <div class="md:flex mt-5">
+            <div class="md:w-1/2 h-[550px] flex justify-center items-center   overflow-hidden">
+                <img src="./img/image-1.jpg" class="w-[72%]">
+            </div>
+            <div class="md:w-1/2 h-[500px] relative">
+                <img src="./img/image-2.jpg" >
+                <span class="pulse"></span>
+                <span class="pulsed"></span>
+                <span class="puls">+</span>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="w-full h-[300px] border  border-2">
+
+    </section> -->
     <script src="script.js"></script>
 </body>
 </html>
