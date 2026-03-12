@@ -39,73 +39,67 @@
     color: aliceblue;
     transition: 0.5s ease;
 }
-.puls
-{
-    position: absolute;
-    bottom: 45%;
-    left: 25%;
-    background: white;
-    border-radius: 50%;
-    font-size: 22px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease;
-}
-.pulse
-{
-    position: absolute;
-    bottom: 45%;
-    left: 25%;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid white;
-    animation: ripple 2s infinite;
-}
-.pulsed
-{
-    position: absolute;
-    bottom: 45%;
-    left: 25%;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid white;
-    animation: ripple 2s infinite;
-}
-.pulse
-{
-    animation-duration: 2s;
-}
-.pulsed
-{
-    animation-duration: 1s;
-}
-.puls:hover
-{
-    background: black;
-    color: white;
-    cursor: pointer;
-}
-.pulse:hover
-{
-    border: 1px solid black;
-}
-.pulsed:hover
-{
-    border: 1px solid black;
+.puls{
+position:absolute;
+bottom:45%;
+left:25%;
+background:white;
+border-radius:50%;
+font-size:22px;
+width:30px;
+height:30px;
+display:flex;
+justify-content:center;
+align-items:center;
+transition:0.5s ease;
 }
 
-@keyframes ripple {
-    0%{
-        transform: scale(1);
-        opacity: 1;
-    }
-    100%{
-        transform: scale(2);
-        opacity: 0;
-    }
+.pulse,.pulsed{
+position:absolute;
+bottom:45%;
+left:25%;
+width:30px;
+height:30px;
+border-radius:50%;
+border:2px solid white;
+animation:ripple 2s infinite;
+}
+
+.pulsed{
+animation-delay:1s;
+}
+
+.puls:hover{
+background:black;
+color:white;
+cursor:pointer;
+}
+
+.puls:hover ~ .pulse,
+.puls:hover ~ .pulsed{
+border:2px solid black;
+}
+
+@keyframes ripple{
+
+0%{
+transform:scale(1);
+opacity:1;
+}
+
+100%{
+transform:scale(2);
+opacity:0;
+}
+
+}
+.box{
+width:0;
+height:0;
+border-left:12px solid transparent;
+border-right:12px solid transparent;
+border-top:15px solid white;
+margin-top: 2px;
+position: absolute;
+right: 10px;
 }
