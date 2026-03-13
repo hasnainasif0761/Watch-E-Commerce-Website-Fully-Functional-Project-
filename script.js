@@ -81,4 +81,28 @@ autoSlide()
 
 
 
+// Change Website Title Dynamically
+let changeTitle = document.title;
+
+let titleInterval = null;
+
+document.addEventListener('visibilitychange',function(){
+    let title = ["💥 Don't Forget this...",'⚠️ Please Come Back','⏳ We are waiting for you'];
+    
+    let i = 0 ;
+
+    titleInterval = setInterval(function(){
+     if(document.hidden){
+        document.title = title[i % title.length];
+        i++
+     }else{
+        clearInterval(titleInterval);
+        document.title = changeTitle
+     }   
+    },2000)
+
+
+})
+
+
 
