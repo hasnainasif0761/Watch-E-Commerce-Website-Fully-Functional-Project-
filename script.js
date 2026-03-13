@@ -1,22 +1,13 @@
 // Slider Content
 const slider = document.getElementById('slider');
 const slide = slider.children;
-// Card Animation Slider
-const cardSlider = document.querySelector('.cards');
-const cardChildren = cardSlider.children
-console.log(cardChildren)
-// Plus Btn Animation Content
-const plusBtn = document.querySelector('.puls');
-const showArrival = document.querySelector('.showArrival');
+
 
 // Slider Content
 let index = 0;
-let cardIndex = 0;
 
 function showSlider(){
     slider.style.transform = `translateX(-${index * 100}%)`
-    // cardSlider.style.transform = `translateX(-${cardIndex * 300}px)`
- recursion()
 }
 
 function recursion(){
@@ -25,14 +16,17 @@ function recursion(){
         if(index >= slide.length){
             index = 0
         }
-        cardIndex++
-        if(cardIndex >= cardChildren.length){
-            cardIndex = 0
-        }
         showSlider()
+        recursion()
     },2000)
 }
 recursion()
+
+
+
+// Plus Btn Animation Content
+const plusBtn = document.querySelector('.puls');
+const showArrival = document.querySelector('.showArrival');
 
 // Plus Btn Animation Content
 plusBtn.addEventListener('click',(e)=>{
@@ -42,4 +36,49 @@ plusBtn.addEventListener('click',(e)=>{
 document.addEventListener('click',()=>{
     showArrival.classList.add('hidden')
 })
+
+// Card Animation Slider
+const cardSlider = document.querySelector('.cards');
+const cards = [...cardSlider.children];
+
+const visileCards = 4;
+
+for(let i = 0; i < visileCards; i++){
+    const clone = cards[i].cloneNode(true)
+    cardSlider.appendChild(clone)
+}
+
+for(let i = cards.length - visileCards; i < cards.length; i++){
+    const clone = cards[i].cloneNode(true);
+    cardSlider.prepend(clone);
+}
+
+let cardIndex = visileCards;
+cardSlider.style.transform = `translateX(-${cardIndex * 340}px)`
+
+function autoSlide(){
+    setTimeout(()=>{
+
+        cardIndex++
+        cardSlider.style.transition = "transform 0.5s"
+        cardSlider.style.transform = `translateX(-${cardIndex * 340}px)`
+
+        // end par reset
+        if(cardIndex >= cardSlider.children.length - visileCards){
+            setTimeout(()=>{
+                cardSlider.style.transition = "none"
+                cardIndex = visileCards
+                cardSlider.style.transform = `translateX(-${cardIndex * 340}px)`
+            },500)
+        }
+
+        autoSlide()
+
+    },3000)
+}
+
+autoSlide()
+
+
+
 
