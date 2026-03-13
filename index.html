@@ -178,27 +178,324 @@
             <h2>Best Seller</h2>
         </div>
         <div class="w-full h-auto border overflow-hidden">
-            <div class="cards max-w h-auto gap-10 md:px-10 px-5  py-5">
-                <div class="w-[300px] h-[460px] border flex-shrink-0">
-                    <img src="./img/card-img-1.jpg" alt="">
+            <div class="cards max-w h-auto gap-10 md:px-10 px-5 py-5">
+                <div class="w-[300px] h-[460px] flex-shrink-0 group relative overflow-hidden">
+                    <div class="h-[358px] overflow-hidden relative cursor-pointer group">
+                        <img src="./img/card-img-1.jpg"
+                        class="absolute w-full h-full object-cover transition-all duration-500 group-hover:opacity-0">
+                        <img src="./img/card-hover-1.jpg"
+                        class="absolute w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <p class="absolute top-0 bg-black text-white px-3 py-1 m-2 text-[12px]">-16%</p>
+                        <div class="absolute top-2 flex flex-col gap-2 right-3 translate transition-transform translate-x-20 group-hover:translate-x-0 duration-500">
+                            <!-- <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-shopping-bag-line"></i></div> -->
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-heart-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-arrow-left-right-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-search-line"></i></div>
+                        </div>
+                        <button class="absolute top-1/2 left-[20%] px-7 py-2 uppercase bg-white text-black shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-all duration-500 opacity-0 group-hover:opacity-100 text-[14px] font-semibold rounded-[5px]">Add to Cart</button>
+                    </div>
+                    <div class="border h-[100px]">
+                        <p class="text-[13px] font-semibold text-gray-500 m-2">DANIEL WELLINCTON</p>
+                        <p class="text-[14px] font-semibold m-2">ORIGINAL GRAIN SAPELE</p>
+                        <p class="text-[13px] font-semibold text-black m-2">
+                            <del class="text-gray-500">$120.00</del> $100.00
+                        </p>
+                    </div>
                 </div>
-                <div class="w-[300px] h-[300px] border flex-shrink-0 bg-green-300">
-                    <img src="./img/card-img-2.jpg" alt="">
+                <div class="w-[300px] h-[460px] flex-shrink-0 group relative overflow-hidden">
+                    <div class="h-[358px] overflow-hidden relative cursor-pointer group">
+                        <img src="./img/card-img-2.jpg"
+                        class="absolute w-full h-full object-cover transition-all duration-500 group-hover:opacity-0">
+                        <img src="./img/card-hover-2.jpg"
+                        class="absolute w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <p class="absolute top-0 bg-black text-white px-3 py-1 m-2 text-[12px]">-20%</p>
+                        <div class="absolute top-2 flex flex-col gap-2 right-3 translate transition-transform translate-x-20 group-hover:translate-x-0 duration-500">
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-heart-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-arrow-left-right-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-search-line"></i></div>
+                        </div>
+                        <button class="absolute top-1/2 left-[20%] px-7 py-2 uppercase bg-white text-black shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-all duration-500 opacity-0 group-hover:opacity-100 text-[14px] font-semibold rounded-[5px]">Add to Cart</button>
+                    </div>
+                    <div class="border h-[100px]">
+                        <p class="text-[13px] font-semibold text-gray-500 m-2">CASTUS FIESTA</p>
+                        <p class="text-[14px] font-semibold m-2">CLUSE MINUIT</p>
+                        <p class="text-[13px] font-semibold text-black m-2">
+                            <del class="text-gray-500">$125.00</del> $100.00
+                        </p>
+                    </div>
                 </div>
-                <div class="w-[300px] h-[300px] border flex-shrink-0">
-                    <img src="./img/card-img-3.jpg" alt="">
+                <div class="w-[300px] h-[460px] flex-shrink-0 group relative overflow-hidden">
+                    <div class="h-[358px] overflow-hidden relative cursor-pointer group">
+                        <img src="./img/card-img-3.jpg"
+                        class="absolute w-full h-full object-cover transition-all duration-500 group-hover:opacity-0">
+                        <img src="./img/card-hover-3.jpg"
+                        class="absolute w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <p class="absolute top-0 bg-black text-white px-3 py-1 m-2 text-[12px]">-33%</p>
+                        <div class="absolute top-2 flex flex-col gap-2 right-3 translate transition-transform translate-x-20 group-hover:translate-x-0 duration-500">
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-shopping-bag-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-heart-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-arrow-left-right-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-search-line"></i></div>
+                        </div>
+                        <button class="absolute top-1/2 left-[20%] px-7 py-2 uppercase bg-white text-black shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-all duration-500 opacity-0 group-hover:opacity-100 text-[14px] font-semibold rounded-[5px]">Add to Cart</button>
+                    </div>
+                    <div class="border h-[100px]">
+                        <p class="text-[13px] font-semibold text-gray-500 m-2">CASTUS FIESTA</p>
+                        <p class="text-[14px] font-semibold m-2">KENNETH COLE</p>
+                        <p class="text-[13px] font-semibold text-black m-2">
+                            <del class="text-gray-500">$150.00</del> $100.00
+                        </p>
+                    </div>
                 </div>
-                <div class="w-[300px] h-[300px] border flex-shrink-0">
-                    <img src="./img/card-img-4.jpg" alt="">
+                <div class="w-[300px] h-[460px] flex-shrink-0 group relative overflow-hidden">
+                    <div class="h-[358px] overflow-hidden relative cursor-pointer group">
+                        <img src="./img/card-img-4.jpg"
+                        class="absolute w-full h-full object-cover transition-all duration-500 group-hover:opacity-0">
+                        <img src="./img/card-hover-4.jpg"
+                        class="absolute w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <p class="absolute top-0 bg-black text-white px-3 py-1 m-2 text-[12px]">-16%</p>
+                        <div class="absolute top-2 flex flex-col gap-2 right-3 translate transition-transform translate-x-20 group-hover:translate-x-0 duration-500">
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-shopping-bag-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-heart-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-arrow-left-right-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-search-line"></i></div>
+                        </div>
+                        <button class="absolute top-1/2 left-[20%] px-7 py-2 uppercase bg-white text-black shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-all duration-500 opacity-0 group-hover:opacity-100 text-[14px] font-semibold rounded-[5px]">Add to Cart</button>
+                    </div>
+                    <div class="border h-[100px]">
+                        <p class="text-[13px] font-semibold text-gray-500 m-2">DANIEL WELLINCTON</p>
+                        <p class="text-[14px] font-semibold m-2">PAUL HEWITT MISS OCEAN</p>
+                        <p class="text-[13px] font-semibold text-black m-2">
+                            <del class="text-gray-500">$120.00</del> $100.00
+                        </p>
+                    </div>
                 </div>
-                <div class="w-[300px] h-[300px] border flex-shrink-0">
-                    <img src="./img/card-img-5.jpg" alt="">
+                <div class="w-[300px] h-[460px] flex-shrink-0 group relative overflow-hidden">
+                    <div class="h-[358px] overflow-hidden relative cursor-pointer group">
+                        <img src="./img/card-img-5.jpg"
+                        class="absolute w-full h-full object-cover transition-all duration-500 group-hover:opacity-0">
+                        <img src="./img/card-hover-5.jpg"
+                        class="absolute w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <p class="absolute top-0 bg-black text-white px-3 py-1 m-2 text-[12px]">-20%</p>
+                        <div class="absolute top-2 flex flex-col gap-2 right-3 translate transition-transform translate-x-20 group-hover:translate-x-0 duration-500">
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-shopping-bag-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-heart-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-arrow-left-right-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-search-line"></i></div>
+                        </div>
+                        <button class="absolute top-1/2 left-[20%] px-7 py-2 uppercase bg-white text-black shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-all duration-500 opacity-0 group-hover:opacity-100 text-[14px] font-semibold rounded-[5px]">Add to Cart</button>
+                    </div>
+                    <div class="border h-[100px]">
+                        <p class="text-[13px] font-semibold text-gray-500 m-2">CASTUS FIESTA</p>
+                        <p class="text-[14px] font-semibold m-2">G-SHOK DIGITAL</p>
+                        <p class="text-[13px] font-semibold text-black m-2">
+                            <del class="text-gray-500">$120.00</del> $80.00
+                        </p>
+                    </div>
                 </div>
-                <div class="w-[300px] h-[300px] border flex-shrink-0">
-                    <img src="./img/card-img-6.jpg" alt="">
+                <div class="w-[300px] h-[460px] flex-shrink-0 group relative overflow-hidden">
+                    <div class="h-[358px] overflow-hidden relative cursor-pointer group">
+                        <img src="./img/card-img-6.jpg"
+                        class="absolute w-full h-full object-cover transition-all duration-500 group-hover:opacity-0">
+                        <img src="./img/card-hover-6.jpg"
+                        class="absolute w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <p class="absolute top-0 bg-black text-white px-3 py-1 m-2 ml-4 mt-3 text-[12px]">-20%</p>
+                        <div class="absolute top-2 flex flex-col gap-2 right-3 translate transition-transform translate-x-20 group-hover:translate-x-0 duration-500">
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-shopping-bag-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-heart-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-arrow-left-right-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-search-line"></i></div>
+                        </div>
+                        <button class="absolute top-1/2 left-[20%] px-7 py-2 uppercase bg-white text-black shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-all duration-500 opacity-0 group-hover:opacity-100 text-[14px] font-semibold rounded-[5px]">Add to Cart</button>
+                    </div>
+                    <div class="border h-[100px]">
+                        <p class="text-[13px] font-semibold text-gray-500 m-2">CASTUS FIESTA</p>
+                        <p class="text-[14px] font-semibold m-2">CACTUS SUMMAR SPLASH</p>
+                        <p class="text-[13px] font-semibold text-black m-2">
+                            <del class="text-gray-500">$120.00</del> $80.00
+                        </p>
+                    </div>
                 </div>
-                <div class="w-[300px] h-[300px] border flex-shrink-0">
-                    <img src="./img/card-img-7.jpg" alt="">
+                <div class="w-[300px] h-[460px] flex-shrink-0 group relative overflow-hidden">
+                    <div class="h-[358px] overflow-hidden relative cursor-pointer group">
+                        <img src="./img/card-img-7.jpg"
+                        class="absolute w-full h-full object-cover transition-all duration-500 group-hover:opacity-0">
+                        <img src="./img/card-hover-7.jpg"
+                        class="absolute w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <!-- <p class="absolute top-0 bg-black text-white px-3 py-1 m-2 text-[12px]">-13%</p> -->
+                        <div class="absolute top-2 flex flex-col gap-2 right-3 translate transition-transform translate-x-20 group-hover:translate-x-0 duration-500">
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-shopping-bag-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-heart-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-arrow-left-right-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-search-line"></i></div>
+                        </div>
+                        <button class="absolute top-1/2 left-[20%] px-7 py-2 uppercase bg-white text-black shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-all duration-500 opacity-0 group-hover:opacity-100 text-[14px] font-semibold rounded-[5px]">Add to Cart</button>
+                    </div>
+                    <div class="border h-[100px]">
+                        <p class="text-[13px] font-semibold text-gray-500 m-2">DANIEL WELLINCTON</p>
+                        <p class="text-[14px] font-semibold m-2">BRING AURORA COLLECTION</p>
+                        <p class="text-[13px] font-semibold text-black m-2"> $100.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards max-w h-auto gap-10 md:px-10 px-5 py-5">
+                <div class="w-[300px] h-[460px] flex-shrink-0 group relative overflow-hidden">
+                    <div class="h-[358px] overflow-hidden relative cursor-pointer group">
+                        <img src="./img/card-img-1.jpg"
+                        class="absolute w-full h-full object-cover transition-all duration-500 group-hover:opacity-0">
+                        <img src="./img/card-hover-1.jpg"
+                        class="absolute w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <p class="absolute top-0 bg-black text-white px-3 py-1 m-2 text-[12px]">-16%</p>
+                        <div class="absolute top-2 flex flex-col gap-2 right-3 translate transition-transform translate-x-20 group-hover:translate-x-0 duration-500">
+                            <!-- <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-shopping-bag-line"></i></div> -->
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-heart-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-arrow-left-right-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-search-line"></i></div>
+                        </div>
+                        <button class="absolute top-1/2 left-[20%] px-7 py-2 uppercase bg-white text-black shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-all duration-500 opacity-0 group-hover:opacity-100 text-[14px] font-semibold rounded-[5px]">Add to Cart</button>
+                    </div>
+                    <div class="border h-[100px]">
+                        <p class="text-[13px] font-semibold text-gray-500 m-2">DANIEL WELLINCTON</p>
+                        <p class="text-[14px] font-semibold m-2">ORIGINAL GRAIN SAPELE</p>
+                        <p class="text-[13px] font-semibold text-black m-2">
+                            <del class="text-gray-500">$120.00</del> $100.00
+                        </p>
+                    </div>
+                </div>
+                <div class="w-[300px] h-[460px] flex-shrink-0 group relative overflow-hidden">
+                    <div class="h-[358px] overflow-hidden relative cursor-pointer group">
+                        <img src="./img/card-img-2.jpg"
+                        class="absolute w-full h-full object-cover transition-all duration-500 group-hover:opacity-0">
+                        <img src="./img/card-hover-2.jpg"
+                        class="absolute w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <p class="absolute top-0 bg-black text-white px-3 py-1 m-2 text-[12px]">-20%</p>
+                        <div class="absolute top-2 flex flex-col gap-2 right-3 translate transition-transform translate-x-20 group-hover:translate-x-0 duration-500">
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-heart-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-arrow-left-right-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-search-line"></i></div>
+                        </div>
+                        <button class="absolute top-1/2 left-[20%] px-7 py-2 uppercase bg-white text-black shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-all duration-500 opacity-0 group-hover:opacity-100 text-[14px] font-semibold rounded-[5px]">Add to Cart</button>
+                    </div>
+                    <div class="border h-[100px]">
+                        <p class="text-[13px] font-semibold text-gray-500 m-2">CASTUS FIESTA</p>
+                        <p class="text-[14px] font-semibold m-2">CLUSE MINUIT</p>
+                        <p class="text-[13px] font-semibold text-black m-2">
+                            <del class="text-gray-500">$125.00</del> $100.00
+                        </p>
+                    </div>
+                </div>
+                <div class="w-[300px] h-[460px] flex-shrink-0 group relative overflow-hidden">
+                    <div class="h-[358px] overflow-hidden relative cursor-pointer group">
+                        <img src="./img/card-img-3.jpg"
+                        class="absolute w-full h-full object-cover transition-all duration-500 group-hover:opacity-0">
+                        <img src="./img/card-hover-3.jpg"
+                        class="absolute w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <p class="absolute top-0 bg-black text-white px-3 py-1 m-2 text-[12px]">-33%</p>
+                        <div class="absolute top-2 flex flex-col gap-2 right-3 translate transition-transform translate-x-20 group-hover:translate-x-0 duration-500">
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-shopping-bag-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-heart-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-arrow-left-right-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-search-line"></i></div>
+                        </div>
+                        <button class="absolute top-1/2 left-[20%] px-7 py-2 uppercase bg-white text-black shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-all duration-500 opacity-0 group-hover:opacity-100 text-[14px] font-semibold rounded-[5px]">Add to Cart</button>
+                    </div>
+                    <div class="border h-[100px]">
+                        <p class="text-[13px] font-semibold text-gray-500 m-2">CASTUS FIESTA</p>
+                        <p class="text-[14px] font-semibold m-2">KENNETH COLE</p>
+                        <p class="text-[13px] font-semibold text-black m-2">
+                            <del class="text-gray-500">$150.00</del> $100.00
+                        </p>
+                    </div>
+                </div>
+                <div class="w-[300px] h-[460px] flex-shrink-0 group relative overflow-hidden">
+                    <div class="h-[358px] overflow-hidden relative cursor-pointer group">
+                        <img src="./img/card-img-4.jpg"
+                        class="absolute w-full h-full object-cover transition-all duration-500 group-hover:opacity-0">
+                        <img src="./img/card-hover-4.jpg"
+                        class="absolute w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <p class="absolute top-0 bg-black text-white px-3 py-1 m-2 text-[12px]">-16%</p>
+                        <div class="absolute top-2 flex flex-col gap-2 right-3 translate transition-transform translate-x-20 group-hover:translate-x-0 duration-500">
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-shopping-bag-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-heart-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-arrow-left-right-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-search-line"></i></div>
+                        </div>
+                        <button class="absolute top-1/2 left-[20%] px-7 py-2 uppercase bg-white text-black shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-all duration-500 opacity-0 group-hover:opacity-100 text-[14px] font-semibold rounded-[5px]">Add to Cart</button>
+                    </div>
+                    <div class="border h-[100px]">
+                        <p class="text-[13px] font-semibold text-gray-500 m-2">DANIEL WELLINCTON</p>
+                        <p class="text-[14px] font-semibold m-2">PAUL HEWITT MISS OCEAN</p>
+                        <p class="text-[13px] font-semibold text-black m-2">
+                            <del class="text-gray-500">$120.00</del> $100.00
+                        </p>
+                    </div>
+                </div>
+                <div class="w-[300px] h-[460px] flex-shrink-0 group relative overflow-hidden">
+                    <div class="h-[358px] overflow-hidden relative cursor-pointer group">
+                        <img src="./img/card-img-5.jpg"
+                        class="absolute w-full h-full object-cover transition-all duration-500 group-hover:opacity-0">
+                        <img src="./img/card-hover-5.jpg"
+                        class="absolute w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <p class="absolute top-0 bg-black text-white px-3 py-1 m-2 text-[12px]">-20%</p>
+                        <div class="absolute top-2 flex flex-col gap-2 right-3 translate transition-transform translate-x-20 group-hover:translate-x-0 duration-500">
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-shopping-bag-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-heart-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-arrow-left-right-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-search-line"></i></div>
+                        </div>
+                        <button class="absolute top-1/2 left-[20%] px-7 py-2 uppercase bg-white text-black shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-all duration-500 opacity-0 group-hover:opacity-100 text-[14px] font-semibold rounded-[5px]">Add to Cart</button>
+                    </div>
+                    <div class="border h-[100px]">
+                        <p class="text-[13px] font-semibold text-gray-500 m-2">CASTUS FIESTA</p>
+                        <p class="text-[14px] font-semibold m-2">G-SHOK DIGITAL</p>
+                        <p class="text-[13px] font-semibold text-black m-2">
+                            <del class="text-gray-500">$120.00</del> $80.00
+                        </p>
+                    </div>
+                </div>
+                <div class="w-[300px] h-[460px] flex-shrink-0 group relative overflow-hidden">
+                    <div class="h-[358px] overflow-hidden relative cursor-pointer group">
+                        <img src="./img/card-img-6.jpg"
+                        class="absolute w-full h-full object-cover transition-all duration-500 group-hover:opacity-0">
+                        <img src="./img/card-hover-6.jpg"
+                        class="absolute w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <p class="absolute top-0 bg-black text-white px-3 py-1 m-2 ml-4 mt-3 text-[12px]">-20%</p>
+                        <div class="absolute top-2 flex flex-col gap-2 right-3 translate transition-transform translate-x-20 group-hover:translate-x-0 duration-500">
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-shopping-bag-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-heart-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-arrow-left-right-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-search-line"></i></div>
+                        </div>
+                        <button class="absolute top-1/2 left-[20%] px-7 py-2 uppercase bg-white text-black shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-all duration-500 opacity-0 group-hover:opacity-100 text-[14px] font-semibold rounded-[5px]">Add to Cart</button>
+                    </div>
+                    <div class="border h-[100px]">
+                        <p class="text-[13px] font-semibold text-gray-500 m-2">CASTUS FIESTA</p>
+                        <p class="text-[14px] font-semibold m-2">CACTUS SUMMAR SPLASH</p>
+                        <p class="text-[13px] font-semibold text-black m-2">
+                            <del class="text-gray-500">$120.00</del> $80.00
+                        </p>
+                    </div>
+                </div>
+                <div class="w-[300px] h-[460px] flex-shrink-0 group relative overflow-hidden">
+                    <div class="h-[358px] overflow-hidden relative cursor-pointer group">
+                        <img src="./img/card-img-7.jpg"
+                        class="absolute w-full h-full object-cover transition-all duration-500 group-hover:opacity-0">
+                        <img src="./img/card-hover-7.jpg"
+                        class="absolute w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <!-- <p class="absolute top-0 bg-black text-white px-3 py-1 m-2 text-[12px]">-13%</p> -->
+                        <div class="absolute top-2 flex flex-col gap-2 right-3 translate transition-transform translate-x-20 group-hover:translate-x-0 duration-500">
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-shopping-bag-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-heart-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-arrow-left-right-line"></i></div>
+                            <div class="w-[40px] h-[40px] bg-white flex items-center justify-center text-[19px] shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-bg duration-300 cursor-pointer"><i class="ri-search-line"></i></div>
+                        </div>
+                        <button class="absolute top-1/2 left-[20%] px-7 py-2 uppercase bg-white text-black shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-black hover:text-white transition-all duration-500 opacity-0 group-hover:opacity-100 text-[14px] font-semibold rounded-[5px]">Add to Cart</button>
+                    </div>
+                    <div class="border h-[100px]">
+                        <p class="text-[13px] font-semibold text-gray-500 m-2">DANIEL WELLINCTON</p>
+                        <p class="text-[14px] font-semibold m-2">BRING AURORA COLLECTION</p>
+                        <p class="text-[13px] font-semibold text-black m-2"> $100.00</p>
+                    </div>
                 </div>
             </div>
         </div>
