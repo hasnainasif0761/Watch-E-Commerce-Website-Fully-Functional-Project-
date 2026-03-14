@@ -133,21 +133,40 @@ function showTestSlider(){
         testIndex = 0;
     }
     showTestSlider()
-},2000)
+},3000)
 
 
 // ------ Company Slider ---------------//
 let companySlider = document.querySelector('.companySlider');
-let companyChild = companySlider.children;
+let companyChild = [...companySlider.children]
 
+let visibleSlider = 4;
 
-let companyIndex = 0;
+for(let i = 0; i < visibleSlider; i++){
+    let clone = companyChild[i].cloneNode(true);
+    companySlider.appendChild(clone)
+}
 
-function companySlider(){
-    companySlider.style.transform = `translateX(-${companyIndex * 240}px)`
+for(let i = companyChild.length - visibleSlider; i < companyChild.length;i++){
+    let clone = companyChild[i].cloneNode(true)
+    companySlider.prepend(clone)
 }
 
 
+let companyIndex = visibleSlider;
+companySlider.style.transform = `translateX(-${companyIndex * 240}px)`
+
+function companySliderFunc(){
+    companySlider.style.transform = `translateX(-${companyIndex * 240}px)`
+}
+
+setInterval(()=>{
+companyIndex++
+if(companyIndex >= companyChild.length + visibleSlider){
+    companyIndex = visibleSlider
+}
+companySliderFunc()
+},2000)
 
 
 
