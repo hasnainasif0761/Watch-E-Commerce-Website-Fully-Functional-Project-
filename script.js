@@ -106,3 +106,12 @@ document.addEventListener('visibilitychange',function(){
 
 
 
+// Box Hover Animation
+let boxHover = document.getElementById('boxHover');
+
+boxHover.addEventListener('mouseover',()=>{
+    boxHover.classList.add('animate__animated' , 'animate__headShake')
+})
+boxHover.addEventListener('mouseout',()=>{
+    boxHover.classList.remove('animate__animated' , 'animate__headShake')
+})
