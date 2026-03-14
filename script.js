@@ -115,3 +115,46 @@ boxHover.addEventListener('mouseover',()=>{
 boxHover.addEventListener('mouseout',()=>{
     boxHover.classList.remove('animate__animated' , 'animate__headShake')
 })
+
+
+// Testimonial Cards Slider 
+const testSlider = document.querySelector('.testCard');
+const testChild = testSlider.children
+
+let testIndex = 0;
+
+function showTestSlider(){
+    testSlider.style.transform = `translateX(-${testIndex * 100}%)`
+}
+
+    setInterval(()=>{
+    testIndex++
+    if(testIndex >= testChild.length){
+        testIndex = 0;
+    }
+    showTestSlider()
+},2000)
+
+
+// ------ Company Slider ---------------//
+let companySlider = document.querySelector('.companySlider');
+let companyChild = companySlider.children;
+
+
+let companyIndex = 0;
+
+function companySlider(){
+    companySlider.style.transform = `translateX(-${companyIndex * 240}px)`
+}
+
+
+
+
+
+
+
+
+
+
+
+
