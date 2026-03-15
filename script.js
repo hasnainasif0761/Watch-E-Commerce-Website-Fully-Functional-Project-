@@ -170,6 +170,64 @@ companySliderFunc()
 
 
 
+// ------------ Watch Slider --------------- //
+const watchSlide = document.querySelector('.watchSlide');
+
+let isDragge = false;
+let startX;
+let scrollLeft;
+
+watchSlide.addEventListener('mousedown', watchEventFunc);
+
+function watchEventFunc(e){
+
+    isDragge = true;
+
+
+    startX = e.pageX - watchSlide.offsetLeft;
+
+    scrollLeft = watchSlide.scrollLeft;
+
+}
+
+watchSlide.addEventListener('mouseleave',()=>{
+    isDragge = false
+})
+
+watchSlide.addEventListener('mouseup',()=>{
+    isDragge = false
+})
+
+watchSlide.addEventListener('mousemove',(e)=>{
+
+    if(!isDragge) return;
+
+    e.preventDefault();
+
+    const x = e.pageX - watchSlide.offsetLeft;
+
+    const walk = (x - startX) * 2;
+
+    watchSlide.scrollLeft = scrollLeft - walk
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

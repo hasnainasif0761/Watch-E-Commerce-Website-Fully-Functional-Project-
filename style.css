@@ -125,3 +125,22 @@ right: 10px;
     justify-content: center;
     align-items: center;
 }
+
+.watchSlide::-webkit-scrollbar{
+display:none;
+}
+.watchSlide{
+user-select: none;
+}
+
+
+@media (max-width:740px) {
+    .Arrivals-Collection
+    {
+        gap: 20px;
+    }
+    #boxHover
+    {
+        height: 45%;
+    }
+}
